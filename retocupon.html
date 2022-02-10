@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>porcentajes y descuentos</title>
+  </head>
+  <body>
+    <header>
+      <h1>Porcentajes y descuentos</h1>
+    </header>
+    <section>
+      <h3>Calcula el precio a pagar de tus productos</h3>
+      <form>
+        <br />
+        <label for="inputPrice">Escibe el precio de tu producto:</label>
+        <input id="inputPrice" type="number" /><br />
+        <br />
+        <br />
+        <h3>Selecciona tus descuentos</h3>
+        <br />
+        <br />
+        <label for="inputDiscount">Escribe el descuento de tu producto</label>
+        <input id="inputDiscount" type="number" /><br />
+        <br />
+        <label for="selectCupon">Selecciona tu cupon</label>
+        <select id="selecCupon">
+          <option>Seleccionar</option>
+          <option>Cupon common</option>
+          <option>Cupon intermediate</option>
+          <option>Cupon premium</option>
+        </select>
+        <br />
+        <br />
+        <button type="button" onclick="onClickButtonPrice()">
+          Calcular precio con cupon o descuento
+        </button>
+        <p id="resultP"></p>
+      </form>
+    </section>
+    <script src="./retodescuento.js"></script>
+  </body>
+</html>
